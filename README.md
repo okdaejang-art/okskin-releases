@@ -7,6 +7,7 @@
 ## 다운로드 — 0.2.3 공개 시험판
 
 - **[설치 ZIP 바로 받기](https://github.com/okdaejang-art/okskin-releases/releases/download/v0.2.3/OkSkin-0.2.3-macOS-universal.zip)**
+- [종철이형 블로그 소개글](https://okdongja.tistory.com/40)
 - [릴리스·설치 안내·검증 파일 보기](https://github.com/okdaejang-art/okskin-releases/releases/tag/v0.2.3)
 - Intel(x86_64)·Apple Silicon(arm64)을 함께 포함한 유니버설 배포본
 - 무료로 내려받아 시험할 수 있습니다. 이 저장소는 설치 파일과 사용 안내를 제공하는 배포용 저장소입니다.
