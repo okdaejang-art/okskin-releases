@@ -1,17 +1,21 @@
 # 옥피부 (OkSkin)
 
-<img src="https://github.com/okdaejang-art/okskin-releases/releases/download/v0.2.4/OkSkin-icon.png" width="180" alt="옥피부 얼굴 아이콘">
+<img src="https://github.com/okdaejang-art/okskin-releases/releases/download/v0.2.5/OkSkin-icon.png" width="180" alt="옥피부 얼굴 아이콘">
 
 **Final Cut Pro에서 피부 보정과 얼굴형 조절을 함께 사용하는 Mac용 효과입니다.** 사진·동영상을 따로 열어 볼 수 있는 독립 미리보기 앱도 포함합니다.
 
-## 다운로드 — 0.2.4 공개 시험판
+## 다운로드 — 0.2.5 공개 시험판
 
-- **[설치 ZIP 바로 받기](https://github.com/okdaejang-art/okskin-releases/releases/download/v0.2.4/OkSkin-0.2.4-macOS-universal.zip)**
-- [릴리스·설치 안내·검증 파일 보기](https://github.com/okdaejang-art/okskin-releases/releases/tag/v0.2.4)
+- **[설치 ZIP 바로 받기](https://github.com/okdaejang-art/okskin-releases/releases/download/v0.2.5/OkSkin-0.2.5-macOS-universal.zip)**
+- [릴리스·설치 안내·검증 파일 보기](https://github.com/okdaejang-art/okskin-releases/releases/tag/v0.2.5)
 - Intel(x86_64)·Apple Silicon(arm64)을 함께 포함한 유니버설 배포본
 - 무료로 내려받아 시험할 수 있습니다. 이 저장소는 설치 파일과 사용 안내를 제공하는 배포용 저장소입니다.
 
-GitHub의 **Assets → OkSkin-0.2.4-macOS-universal.zip**을 받으세요. 자동으로 표시되는 **Source code** ZIP은 앱 설치 파일이 아닙니다.
+GitHub의 **Assets → OkSkin-0.2.5-macOS-universal.zip**을 받으세요. 자동으로 표시되는 **Source code** ZIP은 앱 설치 파일이 아닙니다.
+
+**0.2.5 수정:** ZIP을 풀 때 내부 한글 파일명이 다른 Unicode 표현으로 바뀌어 `a sealed resource is missing or invalid`가 발생하던 문제를 고쳤습니다. 앱과 효과의 표시 이름은 옥피부로 유지합니다. 0.2.4에서 이 오류가 났다면 새 ZIP을 별도 폴더에 풀어 사용하세요.
+
+**실행 제한:** Apple Developer ID 서명·공증 전 시험판입니다. 서명 무결성 오류 수정과 별개로 macOS가 첫 실행을 차단할 수 있으며, 이번 압축 해제 실행 시험에서도 이 차단을 확인했습니다. 보안 설정을 자동 변경하거나 다운로드 앱을 재서명하지 않습니다.
 
 ## 할 수 있는 것
 
@@ -49,9 +53,10 @@ GitHub의 **Assets → OkSkin-0.2.4-macOS-universal.zip**을 받으세요. 자�
 - 파컷 효과 표시·8개 조절 항목·얼굴 감지·ProRes 출력, 독립 앱 미리보기·영상 출력 확인.
 - 12개 GPU 검사 통과. 앱·엔진·FxPlug·두 런타임 프레임워크 모두 x86_64/arm64 및 서명 검사 완료.
 - **Apple Silicon 실기기 실행·성능 검증은 아직입니다.** 유니버설 파일 포함 여부와 실제 실행 검증은 구분해서 안내합니다.
-- 0.2.4는 앱 안에서 설치·정리·진단하는 기능을 추가했으며 보정 엔진은 0.2.1과 같습니다.
+- 0.2.5는 압축 해제 후 서명 오류를 고쳤습니다. 앱 안의 설치·정리·진단 기능은 유지하며 보정 엔진은 0.2.1과 같습니다.
+- 기본 압축 유틸리티로 APFS 볼륨에 풀어 서명 검사를 통과했습니다. 설치·복원 검사 9개, 실제 배포 앱의 임시 폴더 교체·서명 검사(등록은 모의 처리), 파일명 정규화·변조 거부 검사를 통과했습니다.
 
-**현재 조사 중:** M5 Max / macOS Tahoe 26.6.2에서 효과 경고 표시 제보가 있습니다. 0.2.4가 이 로딩 문제까지 해결했다는 실기기 검증은 아직 없습니다.
+**현재 조사 중:** M5 Max / macOS Tahoe 26.6.2에서 효과 경고 표시 제보가 있습니다. 0.2.5가 이 로딩 문제까지 해결했다는 실기기 검증은 아직 없습니다.
 
 ## 시험판에서 알아둘 점
 
