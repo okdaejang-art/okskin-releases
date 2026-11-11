@@ -1,18 +1,17 @@
 # 옥피부 (OkSkin)
 
-<img src="https://github.com/okdaejang-art/okskin-releases/releases/download/v0.2.3/OkSkin-icon.png" width="180" alt="옥피부 얼굴 아이콘">
+<img src="https://github.com/okdaejang-art/okskin-releases/releases/download/v0.2.4/OkSkin-icon.png" width="180" alt="옥피부 얼굴 아이콘">
 
 **Final Cut Pro에서 피부 보정과 얼굴형 조절을 함께 사용하는 Mac용 효과입니다.** 사진·동영상을 따로 열어 볼 수 있는 독립 미리보기 앱도 포함합니다.
 
-## 다운로드 — 0.2.3 공개 시험판
+## 다운로드 — 0.2.4 공개 시험판
 
-- **[설치 ZIP 바로 받기](https://github.com/okdaejang-art/okskin-releases/releases/download/v0.2.3/OkSkin-0.2.3-macOS-universal.zip)**
-- [종철이형 블로그 소개글](https://okdongja.tistory.com/40)
-- [릴리스·설치 안내·검증 파일 보기](https://github.com/okdaejang-art/okskin-releases/releases/tag/v0.2.3)
+- **[설치 ZIP 바로 받기](https://github.com/okdaejang-art/okskin-releases/releases/download/v0.2.4/OkSkin-0.2.4-macOS-universal.zip)**
+- [릴리스·설치 안내·검증 파일 보기](https://github.com/okdaejang-art/okskin-releases/releases/tag/v0.2.4)
 - Intel(x86_64)·Apple Silicon(arm64)을 함께 포함한 유니버설 배포본
 - 무료로 내려받아 시험할 수 있습니다. 이 저장소는 설치 파일과 사용 안내를 제공하는 배포용 저장소입니다.
 
-GitHub의 **Assets → OkSkin-0.2.3-macOS-universal.zip**을 받으세요. 자동으로 표시되는 **Source code** ZIP은 앱 설치 파일이 아닙니다.
+GitHub의 **Assets → OkSkin-0.2.4-macOS-universal.zip**을 받으세요. 자동으로 표시되는 **Source code** ZIP은 앱 설치 파일이 아닙니다.
 
 ## 할 수 있는 것
 
@@ -25,13 +24,19 @@ GitHub의 **Assets → OkSkin-0.2.3-macOS-universal.zip**을 받으세요. 자�
 
 ## 설치와 파이널컷 사용
 
-1. ZIP을 **폴더째** 풀어 주세요. 앱과 `옥피부 효과` 폴더, 설치 명령 파일을 같은 폴더에 둡니다.
-2. 작업을 저장하고 **Final Cut Pro·Motion·옥피부 앱을 종료**합니다.
-3. 배포 폴더의 **옥피부 설치.command**를 실행합니다. 터미널에 설치 완료 문구가 나오면 됩니다.
-4. Final Cut Pro를 다시 열고 **효과 브라우저(⌘5) → 옥피부**를 선택합니다.
-5. 옥피부 효과를 영상 클립으로 드래그한 뒤 **비디오 인스펙터**에서 값을 조절합니다.
+1. ZIP을 풀고 **옥피부.app**을 엽니다. 앱을 응용 프로그램으로 옮긴 경우에도 같은 방법입니다.
+2. 앱 위쪽의 **파이널컷에 설치**를 누릅니다.
+3. **앱 종료하고 설치**를 누르면 파컷·Motion·옥피부에 정상 종료를 요청합니다. 저장 확인 창이 뜨면 응답해 주세요. 종료가 취소되면 설치도 기다립니다.
+4. 별도 설치 창의 **옥피부 설치 완료**를 확인합니다. **앱 위치 보기**로 실제 설치된 앱을 찾을 수 있습니다.
+5. 파컷을 열고 효과 브라우저(⌘5)에서 옥피부를 적용합니다.
 
-설치 명령은 현재 사용자의 응용 프로그램 폴더에 앱을, Motion Templates의 Effects 폴더에 효과를 설치합니다. 기존 옥피부 앱·효과는 교체 전에 백업합니다. Xcode·FxPlug SDK를 별도로 설치할 필요는 없습니다.
+`옥피부 설치.command`도 같은 설치 창을 여는 보조 실행 파일입니다. 터미널의 ‘프로세스 완료됨’은 설치 성공 표시가 아닙니다.
+
+설치는 **현재 사용자의 홈 → 응용 프로그램**에 앱을 둡니다. 공용 `/Applications`와 홈의 `~/Applications`에 있는 옥피부 앱을 식별자로 확인하고, 기존 옥피부 효과·전용 캐시·저장된 창 상태와 이전 플러그인 등록을 정리한 뒤 새로 설치합니다. 이전 파일은 `~/Library/Application Support/옥피부/Backups/`의 ZIP으로 백업합니다. 실패하면 교체한 파일과 기존 등록을 복원합니다. 권한 문제나 같은 이름의 다른 앱이 있으면 실패 이유를 표시합니다.
+
+효과가 나타나도 경고 아이콘이 남으면 앱의 **설치 진단 저장**을 눌러 진단 파일을 확인해 주세요. 설치 위치·버전·서명·등록 상태·최근 옥피부 실행 기록만 모으며 영상은 넣지 않고 자동 전송하지 않습니다.
+
+삭제하려면 관련 앱을 종료하고 위에 적힌 옥피부 앱과 옥피부 효과 폴더를 휴지통으로 옮기세요.
 
 독립 앱은 Finder의 **이동 → 홈 → 응용 프로그램 → 옥피부.app**에서 열 수 있습니다. 파이널컷에서 효과를 쓸 때 독립 앱을 계속 켜 둘 필요는 없습니다. 앱 안에 효과 엔진이 들어 있어 앱을 삭제하면 파컷 효과도 정상 작동하지 않습니다.
 
@@ -44,7 +49,9 @@ GitHub의 **Assets → OkSkin-0.2.3-macOS-universal.zip**을 받으세요. 자�
 - 파컷 효과 표시·8개 조절 항목·얼굴 감지·ProRes 출력, 독립 앱 미리보기·영상 출력 확인.
 - 12개 GPU 검사 통과. 앱·엔진·FxPlug·두 런타임 프레임워크 모두 x86_64/arm64 및 서명 검사 완료.
 - **Apple Silicon 실기기 실행·성능 검증은 아직입니다.** 유니버설 파일 포함 여부와 실제 실행 검증은 구분해서 안내합니다.
-- 0.2.3은 살구·로즈색 얼굴 아이콘을 적용한 버전이며 보정 엔진은 0.2.1과 같습니다.
+- 0.2.4는 앱 안에서 설치·정리·진단하는 기능을 추가했으며 보정 엔진은 0.2.1과 같습니다.
+
+**현재 조사 중:** M5 Max / macOS Tahoe 26.6.2에서 효과 경고 표시 제보가 있습니다. 0.2.4가 이 로딩 문제까지 해결했다는 실기기 검증은 아직 없습니다.
 
 ## 시험판에서 알아둘 점
 
@@ -65,3 +72,6 @@ GitHub의 **Assets → OkSkin-0.2.3-macOS-universal.zip**을 받으세요. 자�
 파컷·Motion·옥피부를 종료한 뒤 위의 옥피부 앱과 Effects 아래 옥피부 폴더를 휴지통으로 옮기면 됩니다. 원본 영상이나 파컷 보관함은 제거 대상이 아닙니다.
 
 문제가 있으면 [Issues](https://github.com/okdaejang-art/okskin-releases/issues)에 Mac 칩 종류, macOS·파컷 버전, 어떤 조절에서 발생했는지 알려 주세요.
+
+
+개발 이야기와 사용 안내: [종철이형 블로그](https://okdongja.tistory.com/40)
